@@ -2,6 +2,8 @@ from math import sqrt, floor
 n = int(input())
 if n == 1:
   print(1)
+elif n == 0:
+  print(10)
 else:
   factors = []
   run = True
@@ -28,7 +30,7 @@ else:
   else:
     factors.append(n)
 
-  #Sorting Answers
+#Sorting Answers
   if ans == -1:
     print(ans)
   else:
