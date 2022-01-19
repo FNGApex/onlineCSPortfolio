@@ -1,3 +1,6 @@
+html,body,div,button,span,p,header{
+  font-family: 'Exo 2', sans-serif;
+}
 html {
   width: 100%;
   height: auto;
@@ -25,4 +28,10 @@ button {
   border-radius: 4px;
   background-color: rgba(0,0,0,0.1);
   color: rgb(138, 180, 248);
+}
+button:hover{
+  background-color: rgba(232, 234, 237, 0.2);
+}
+button:active{
+  background-color: rgba(138, 180, 248,0.2)
 }
