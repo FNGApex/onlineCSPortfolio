@@ -5,6 +5,9 @@ html {
 }
 
 body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
   background-color: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
 }
@@ -15,10 +18,11 @@ div {
 }
 
 button {
-  padding: 4px;
+  padding: 15px 10px 15px 10px;
+  cursor: pointer;
   margin: 0px;
   border: 1px solid rgba(232, 234, 237, 0.7);
   border-radius: 4px;
-  background-color: rgba(22, 22, 22, 0.7);
+  background-color: rgba(0,0,0,0.1);
   color: rgb(138, 180, 248);
 }
