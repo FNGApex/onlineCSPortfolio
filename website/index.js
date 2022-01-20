@@ -1,9 +1,15 @@
-resolution = {
-  height: window.innerHeight,
-  width: window.innerWidth
+let scale = {
+  height: window.innerHeight / 1080,
+  width: window.innerWidth / 1920,
+  update: function(){
+    scale.height = window.innerHeight / 1080;
+    scale.width = window.innerWidth / 1920;
+  }
 }
-scale = {
-  height:resolution.height/1080,
-  width:resolution.width/1920
-}
-document.documentElement.style.setProperty("--resolutionBasedFontSize", "10%");
+function scalebar() {
+  scale.update();
+  console.log("Hi");
+  document.documentElement.style.setProperty("--resolutionBasedFontSize", (130 * scale.width).toString() + "%");
+};
+scalebar();
+window.onresize = scalebar
