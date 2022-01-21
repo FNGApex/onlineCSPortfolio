@@ -13,3 +13,16 @@ function scalebar() {
 };
 scalebar();
 window.onresize = scalebar
+let pageContent = document.getElementById("pageContent");
+document.getElementById("homeButton").addEventListener("click",function(e){
+  pageContent.innerHTML = "Home";
+},false);
+document.getElementById("aboutmeButton").addEventListener("click",function(e){
+  pageContent.innerHTML = "About Me";
+},false);
+document.getElementById("projectsButton").addEventListener("click",function(e){
+  pageContent.innerHTML = "Projects";
+},false);
+document.getElementById("contactButton").addEventListener("click",function(e){
+  pageContent.innerHTML = "Contact"
+},false);
