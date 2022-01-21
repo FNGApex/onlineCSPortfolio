@@ -15,7 +15,9 @@ scalebar();
 window.onresize = scalebar
 let pageContent = document.getElementById("pageContent");
 document.getElementById("homeButton").addEventListener("click",function(e){
-  pageContent.innerHTML = "Home";
+  pageContent.innerHTML = "<img src='https://cheaphostings.net/html/tf/nick-berg/nick-berg/assets/img/me.png'>";
+  pageContent.innerHTML += "<div><h1> Hello </h1></div>";
+  pageContent.style.setProperty("display","flex");
 },false);
 document.getElementById("personalButton").addEventListener("click",function(e){
   pageContent.innerHTML = "Personal";
@@ -24,6 +26,6 @@ document.getElementById("projectsButton").addEventListener("click",function(e){
   pageContent.innerHTML = "Projects";
 },false);
 document.getElementById("contactButton").addEventListener("click",function(e){
-  pageContent.innerHTML = "<h1> Contact me <h1>";
-  pageContent.innerHTML += "\n email: dr.stroev@gmail.com";
-},false);
+  pageContent.innerHTML = "<h1> Contact me: </h1>";
+  pageContent.innerHTML += "<div id='contactmeform'> Buisness Inqueries:<a href='mailto:dr.stroev@gmail.com?subject=Buisness%20Inqueries'>dr.stroev@gmail.com</a> </div>";
+},false);  

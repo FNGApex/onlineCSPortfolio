@@ -35,9 +35,14 @@ button:active{
   background-color: rgba(138, 180, 248,0.2);
 }
 #pageContent{
+  display:block;
   text-align:center;
   justify-content: center;
   width:auto;
   margin-left:33%;
   margin-right: 33%;
+}
+#contactmeform{
+  text-align:center;
+  justify-content: center;
 }
