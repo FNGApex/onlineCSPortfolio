@@ -17,12 +17,13 @@ let pageContent = document.getElementById("pageContent");
 document.getElementById("homeButton").addEventListener("click",function(e){
   pageContent.innerHTML = "Home";
 },false);
-document.getElementById("aboutmeButton").addEventListener("click",function(e){
-  pageContent.innerHTML = "About Me";
+document.getElementById("personalButton").addEventListener("click",function(e){
+  pageContent.innerHTML = "Personal";
 },false);
 document.getElementById("projectsButton").addEventListener("click",function(e){
   pageContent.innerHTML = "Projects";
 },false);
 document.getElementById("contactButton").addEventListener("click",function(e){
-  pageContent.innerHTML = "Contact"
+  pageContent.innerHTML = "<h1> Contact me <h1>";
+  pageContent.innerHTML += "\n email: dr.stroev@gmail.com";
 },false);
