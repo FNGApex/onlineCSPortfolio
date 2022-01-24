@@ -10,6 +10,7 @@ body {
   margin: 0px;
   border: 0px;
   padding: 0px;
+  height: 400%; 
   background-color: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
 }
@@ -17,6 +18,7 @@ body {
 div {
   width: 100%;
   display: flex;
+  height:auto;
 }
 
 button {

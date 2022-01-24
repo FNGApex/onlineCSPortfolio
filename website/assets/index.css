@@ -1,7 +1,12 @@
 #mainHeader {
   justify-content: center;
 }
-
+#homeDiv{
+  display: flex;
+}
+#bigpictureofme{
+  scale: 100%;
+}
 .headerButtons {
   padding: 0.9375em 7.4075em 0.9375em 7.4075em;
   height: 4em;
@@ -11,5 +16,5 @@
   border-radius: 0px;
   background-color: inherit;
   color: rgb(138, 180, 248);
-  font-size: var(--resolutionBasedFontSize);
+  font-size: var(--scale);
 }
