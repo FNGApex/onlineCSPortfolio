@@ -1,13 +1,33 @@
-#mainHeader {
-  justify-content: center;
-}
+
 #homeDiv{
   display: flex;
 }
 #bigpictureofme{
-  scale: 100%;
+  width: 800px;
+  height: auto;
+}
+#pageContent{
+  display:block;
+  text-align:center;
+  width:auto;
+  margin-left:30%;
+  margin-right: 30%;
+}
+#homeDiv{
+  display:flex;
+  text-align:center;
+  justify-content: space-evenly;
+}
+#contactmeform{
+  text-align:center;
+  justify-content: center;
+}
+#mainHeader {
+  display:flex;
+  justify-content: center;
 }
 .headerButtons {
+  display: inline-block;
   padding: 0.9375em 7.4075em 0.9375em 7.4075em;
   height: 4em;
   cursor: pointer;
