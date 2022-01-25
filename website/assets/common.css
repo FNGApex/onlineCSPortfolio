@@ -1,11 +1,14 @@
-html,body,div,button,span,p,header{
+*{
   font-family: 'Exo 2', sans-serif;
+  scrollbar-width: none;  /* Firefox */
+}
+*::-webkit-scrollbar{
+  display: none;
 }
 html {
   height: auto;
   font-size: 125%;
 }
-
 body {
   margin: 0px;
   border: 0px;
@@ -14,7 +17,6 @@ body {
   background-color: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
 }
-
 div {
   width: 100%;
   display: block;

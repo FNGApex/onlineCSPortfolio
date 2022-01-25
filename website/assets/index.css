@@ -25,6 +25,9 @@
 #mainHeader {
   display:flex;
   justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0px;
 }
 .headerButtons {
   display: inline-block;
@@ -34,7 +37,13 @@
   margin: 0px;
   border: 0.0625em solid rgba(232, 234, 237, 0.7);
   border-radius: 0px;
-  background-color: inherit;
+  background-color:rgb(51, 51, 51);;
   color: rgb(138, 180, 248);
   font-size: var(--scale);
+}
+.headerButtons:hover{
+  background-color:rgb(77, 76, 76);
+}
+.headerButtons:active{
+  background-color: rgb(52, 66, 87);
 }
