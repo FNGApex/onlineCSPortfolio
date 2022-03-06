@@ -17,9 +17,6 @@ devices = list(devices.items())
 #print(devices)
 devices.sort(key=lambda x:x[1][1],reverse=True)
 highest_amount = devices[0][1][1]
-popular_devices = []
-for i in devices:
-  if i[1][1] == highest_amount:
-    popular_devices.append(i)
+popular_devices = [i for i in devices if i[1][1] == highest_amount]
 #print(popular_devices)
 print(sorted(popular_devices, key= lambda x: x[1])[0][0])
