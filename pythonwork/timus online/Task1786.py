@@ -11,7 +11,10 @@ for i in range(len(testLine)-5):
   if letters[0] == "s":
     amountOfEdits += 1
   elif letters[0] != "S":
-    amountOfEdits += 2
+    if letters[0].isupper():
+      amountOfEdits += 1
+    else:
+      amountOfEdits += 2
   for i in range(1,6):
     if letters[i] != requestedLine[i] and letters[i] != requestedLine[i].upper():
       amountOfEdits += 1
