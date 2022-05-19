@@ -1,11 +1,11 @@
-def determine_flight_time(start_time: list, end_time: list, time_diffrence: int):
-    if start_time > end_time+time_diffrence*60:
-        return 1440+end_time-start_time+time_diffrence*60
+def determine_flight_time(start_time: list, end_time: list, current_time_diffrence: int):
+    if start_time > end_time+current_time_diffrence*60:
+        return 1440+end_time-start_time+current_time_diffrence*60
     else:
-        return end_time-start_time+time_diffrence*60
+        return end_time-start_time+current_time_diffrence*60
 
 
-max_flight_time = 370
+max_flight_time = 360
 time_diffrence = -1
 
 flight_out_start, flight_out_end = 0, 0
